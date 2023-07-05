@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom"
 
 const NavItem = ({link, title}) => {
     return (
-      <li><NavLink to={link}>{title}</NavLink></li>  
+      <li className="nav-item"><NavLink to={link}>{title}</NavLink></li>  
     )
 }
 
