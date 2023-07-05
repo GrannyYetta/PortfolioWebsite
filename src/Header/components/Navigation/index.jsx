@@ -8,7 +8,7 @@ const Navigation = () => {
     })
     return (
         <nav>
-            <ul>{MyNavigation}</ul>
+            <ul className="nav-list">{MyNavigation}</ul>
         </nav>
     )
 }
