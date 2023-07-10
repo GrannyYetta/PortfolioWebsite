@@ -58,6 +58,7 @@ body {
     height: 100px;
     width: 100px;
     background-color: green;
+    padding-left: 0rem;
   }
   
   /* .headerWrapper {
