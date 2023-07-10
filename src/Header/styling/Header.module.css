@@ -1,15 +1,28 @@
-.headerWrapper {
-    background-color: green;
-    height: 50px;
-    width: 100%;
-}
+body {
+
+    font-family: 'Marvel', sans-serif;
+  }
+  
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-family: 'Major Mono Display', monospace;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
     
     li {
+        display: flex;
         list-style: none;
+        justify-content: space-between;
       }
     
       nav {
         display: inline-flex;
+        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         padding: 0 16px;
@@ -18,8 +31,11 @@
     }
   
     nav a{
-      display: inline-flex;
+/*doesn't seem to do much...*/
+      display: inline-flex; 
+/*keeps the nav items separate and evenly distributed*/
       margin: 0 2rem;
+      /*keeps the nav items without underlining*/
       text-decoration: none;
     }
   
@@ -37,16 +53,16 @@
     padding: 0 1rem;
     flex-direction: row;
   }
-  
-  
-body {
 
-    font-family: 'Marvel', sans-serif;
+  logo {
+    height: 100px;
+    width: 100px;
+    background-color: green;
   }
   
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-    font-family: 'Major Mono Display', monospace;
-  }
+  /* .headerWrapper {
+    background-color: green;
+    height: 50px;
+    width: 100%;
+} */
   
