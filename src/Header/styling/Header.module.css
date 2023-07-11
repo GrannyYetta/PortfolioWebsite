@@ -1,27 +1,27 @@
 body {
-
     font-family: 'Marvel', sans-serif;
   }
   
   h1 {
-    align-content: flex-start;
+    align-items: flex-start;
     font-size: 3.2em;
     line-height: 1.1;
     font-family: 'Major Mono Display', monospace;
   }
 
-  ul {
+ul {
     display: flex;
     flex-direction: row;
+    font-size: 22px;
   }
     
-    li {
+li {
         display: flex;
         list-style: none;
         justify-content: space-between;
       }
     
-      nav {
+nav {
         display: inline-flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -31,7 +31,7 @@ body {
         gap: 1rem;
     }
   
-    nav a{
+nav a{
 /*doesn't seem to do much...*/
       display: inline-flex; 
 /*keeps the nav items separate and evenly distributed*/
@@ -40,13 +40,13 @@ body {
       text-decoration: none;
     }
   
-  header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 6rem;
     position: static;
-    background: #F5F5F5;
+    background: #FFEAEA;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -55,11 +55,13 @@ body {
     flex-direction: row;
   }
 
-img {
-  display: flex;
-  height: 50px;
-  width: 100%;
-}
+nav-logo {
+    display: flex;
+    align-items: flex-start;
+    height: 100px;
+    width: 100px;
+    padding-left: 0rem;
+  }
   
   /* .headerWrapper {
     background-color: green;
