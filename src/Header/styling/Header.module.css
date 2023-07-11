@@ -4,6 +4,7 @@ body {
   }
   
   h1 {
+    align-content: flex-start;
     font-size: 3.2em;
     line-height: 1.1;
     font-family: 'Major Mono Display', monospace;
@@ -35,7 +36,7 @@ body {
       display: inline-flex; 
 /*keeps the nav items separate and evenly distributed*/
       margin: 0 2rem;
-      /*keeps the nav items without underlining*/
+/*keeps the nav items without underlining*/
       text-decoration: none;
     }
   
@@ -54,12 +55,11 @@ body {
     flex-direction: row;
   }
 
-  logo {
-    height: 100px;
-    width: 100px;
-    background-color: green;
-    padding-left: 0rem;
-  }
+img {
+  display: flex;
+  height: 50px;
+  width: 100%;
+}
   
   /* .headerWrapper {
     background-color: green;
