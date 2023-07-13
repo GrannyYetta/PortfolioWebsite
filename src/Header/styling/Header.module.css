@@ -55,8 +55,7 @@ header {
     flex-direction: row;
   }
 
-nav-logo {
-    display: flex;
+.nav-logo {
     align-items: flex-start;
     height: 100px;
     width: 100px;

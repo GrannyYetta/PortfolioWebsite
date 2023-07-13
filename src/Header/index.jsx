@@ -5,6 +5,7 @@ import Title from "./components/Title"
 import styles from "./styling/Header.module.css"
 
 const Header = () => {
+    console.log("styling", styles)
     return (
         <div>
             <header className={styles.headerWrapper}>
