@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
 
-const ProjectItem = ({link, title}) => {
+const ProjectItem = ({uuid, title}) => {
     return (
-        <li className="project-item"> <NavLink to={link}>{title}</NavLink></li>
+        <li className="project-item"> <NavLink to={uuid}>{title}</NavLink></li>
     )
 }
 
