@@ -11,8 +11,10 @@ export const ProjectData = [
     ],
 
     //this can be an array
-    myContributions: "I did this and that",
-    collaborators: "Manuela",
+    myContributions: [
+      { }
+    ],
+    collaborators: "Manuela Jiménez de Arechaga",
     uuid: "450-28",
   },
   // my model ends here
@@ -25,7 +27,9 @@ export const ProjectData = [
     skills: [
       { title: "codesandbox", uuid: "3445-66" },
       { title: "ReactJS", uuid: "120-39" },
-      { title: "Restful API", uuid: "098-47" },
+      { title: "Axios", uuid: "098-47" },
+      { title: "Restful API", uuid: "098-43" },
+      { title: "DOM Manipulation", uuid: "078-47" },
     ],
 
     //this can be an array
