@@ -1,7 +1,7 @@
-
+import styles from '../styling/Header.module.css'
 const Title = () => {
     return (
-        <div>
+        <div className={styles.title}>
             <a href="/" className="title"><h1>Rebeca Taboada</h1></a>
         </div>
     )

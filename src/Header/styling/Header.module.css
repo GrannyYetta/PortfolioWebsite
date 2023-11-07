@@ -1,5 +1,6 @@
 body {
     font-family: 'Marvel', sans-serif;
+
   }
   
   h1 {
@@ -13,15 +14,18 @@ ul {
     display: flex;
     flex-direction: row;
     font-size: 22px;
+    border: 1px solid black
   }
     
 li {
+  border: 1px solid red;
         display: flex;
         list-style: none;
         justify-content: space-between;
       }
     
 nav {
+  border: 1px solid black;
         display: inline-flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -39,32 +43,73 @@ nav a{
 /*keeps the nav items without underlining*/
       text-decoration: none;
     }
+
+.title{
+  text-align: center;
+  border: 1px solid black;
+  margin: 0;
+}
+
+  /* THIS BELOW IS HEADER RELATED.....*/
+.headerWrapper {
+  margin: 0;
+  border: 1px solid black;
   
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6rem;
-    position: static;
-    background: #FFEAEA;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
-    flex-direction: row;
+}
+
+.navLogo {
+border: 1px solid green;
+  display: none;
+}
+  
+
+/* hamburgerMenu attempt */
+
+.burgerMenu {
+display: block;
+position: absolute;
+top: 2%;
+right: 3%
+}
+
+
+@media screen and (min-width: 768px) {
+  
+  .headerWrapper {
+    
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      background: #FFEAEA;
+      padding: 0;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      padding: 0 1rem;
+      flex-direction: row;
+    }
+  
+  .burgerMenu {
+  display: none;
   }
 
-.nav-logo {
+  .navLogo {
+    display: flex;
     align-items: flex-start;
     height: 100px;
     width: 100px;
     padding-left: 0rem;
+  
+  }
+
+  .logo{
+    width: 100px;
+    height: auto
   }
   
-  /* .headerWrapper {
-    background-color: green;
-    height: 50px;
-    width: 100%;
-} */
-  
+ }
+
+
+
+/* hamburgerMenu attempt */
