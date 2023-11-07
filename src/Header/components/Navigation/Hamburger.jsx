@@ -1,24 +1,25 @@
-import List from '../../../assets/list.svg'
+import Lightbulb from '../../../assets/noun-light-bulb-1916019.svg'
 import Close from '../../../assets/x-lg.svg'
-
+import { useState } from 'react'
+import styles from '../../styling/Header.module.css'
 
 const Hamburger = () => {
 
-    return
+  console.log(Lightbulb)
 
-    {/* hamburger menu attempt starts */}
+    const [hamburgerOpen, setHamburgerOpen] = useState(false)
 
-      {/* The toggle button for opening and closing the navigation menu */}
-      <label htmlFor="toggle" className="nav-toggle">
-        {/* An icon representing the hamburger menu */}
-        <img src={List} alt="hamburger-menu" className="foo-bar" />
+    const toggleHamburger = () => {
+        setHamburgerOpen(!hamburgerOpen)
+    }
 
-                {/* An icon representing the close button */}
-                <img src={Close} alt="close" className="foo-exit" />
-      </label>
+    return (
+    <div className={styles.burgerMenu}>
+        <img src={Lightbulb} className="" width="40px"/>
+        <img src={Close} alt="close" style={{display: "none"}} className="foo-exit" />
+     
+</div>
 
-{/* hamburger menu attempt ends */}
-
-}
+)}
 
 export default Hamburger
