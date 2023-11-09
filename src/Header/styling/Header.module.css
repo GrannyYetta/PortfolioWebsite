@@ -112,7 +112,9 @@ right: 3%
 
 .navBtn {
   background-color: none;
-  
+  border: none;
+  color: none;
+  accent-color: none;
 }
 
 /* hamburgerMenu attempt */

@@ -3,20 +3,19 @@ import Close from '../../../assets/x-lg.svg'
 import { useState } from 'react'
 import styles from '../../styling/Header.module.css'
 
-const BurgerMenu = () => {
 
-  console.log(Lightbulb)
+const BurgerMenu = () => {
 
     const [burgerMenuOpen, setBurgerMenuOpen] = useState(false)
 
     const toggleBurger = () => {
-        setBurgerMenuOpen(!BurgermenuOpen)
+        setBurgerMenuOpen(!burgerMenuOpen)
     }
 
     return (
     <div className={styles.burgerMenu}>
-        <button className="navBtn" onClick={toggleBurger}><img src={burgerMenuOpen ? Lightbulb : Close} className="" width="40px"/></button>
-     
+        <button className="navBtn" onClick={toggleBurger}><img src={burgerMenuOpen ? Close : Lightbulb} className="" width="40px"/></button>
+        
 </div>
 
 )}
