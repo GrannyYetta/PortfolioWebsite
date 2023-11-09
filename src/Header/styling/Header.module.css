@@ -12,16 +12,22 @@ body {
 
 ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: 22px;
-    border: 1px solid black
+    border: 1px solid black;
   }
     
 li {
   border: 1px solid red;
-        display: flex;
-        list-style: none;
-        justify-content: space-between;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  position: relative;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
       }
     
 nav {
@@ -72,6 +78,15 @@ top: 2%;
 right: 3%
 }
 
+/*mobile nav*/
+.mobileNav{
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0
+}
 
 @media screen and (min-width: 768px) {
   
@@ -107,6 +122,10 @@ right: 3%
     width: 100px;
     height: auto
   }
+
+  .mob-nav-item {
+    position: abolute;
+  }
   
  }
 
@@ -118,3 +137,4 @@ right: 3%
 }
 
 /* hamburgerMenu attempt */
+

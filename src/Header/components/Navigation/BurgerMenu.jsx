@@ -13,10 +13,36 @@ const BurgerMenu = () => {
     }
 
     return (
+        <>
     <div className={styles.burgerMenu}>
-        <button className="navBtn" onClick={toggleBurger}><img src={burgerMenuOpen ? Close : Lightbulb} className="" width="40px"/></button>
-        
-</div>
+        <button className="navBtn" onClick={toggleBurger}>
+            <img src={Lightbulb} className="" width="40px"/>
+        </button>  
+    
+    </div>
+
+    <div id="mobileNavigation" className={styles.mobileNav} 
+            style={{display: burgerMenuOpen ? "block" : "none"}}
+    >
+        <button className="navBtn" onClick={toggleBurger}>
+            <img src={Close} width="40px" />
+        </button>
+
+        {/** stlye the nav links in this area to 
+         * full width 
+         * finger friendly li item size
+         */}
+        <ul className='mob-nav-list'>
+            <li className='mob-nav-item'>link1</li>
+            <li className='mob-nav-item'>link2</li>
+            <li className='mob-nav-item'>link3</li>
+            <li className='mob-nav-item'>link4</li>
+        </ul>
+    
+
+    </div>
+</>
+
 
 )}
 
