@@ -10,25 +10,7 @@ body {
     font-family: 'Major Mono Display', monospace;
   }
 
-ul {
-    display: flex;
-    flex-direction: column;
-    font-size: 22px;
-    border: 1px solid black;
-  }
-    
-li {
-  border: 1px solid red;
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  position: relative;
-  align-items: stretch;
-  flex-direction: column;
-  margin: 20px;
-  padding: 20px;
-  width: 100%;
-      }
+
     
 nav {
   border: 1px solid black;
@@ -67,6 +49,7 @@ nav a{
 border: 1px solid green;
   display: none;
 }
+
   
 
 /* hamburgerMenu attempt */
@@ -87,6 +70,15 @@ right: 3%
   top: 0;
   left: 0
 }
+
+.mob-nav-item {
+  position: abolute;
+}
+
+.mob-nav-list{
+  border:1px solid red !important
+}
+
 
 @media screen and (min-width: 768px) {
   
@@ -123,9 +115,27 @@ right: 3%
     height: auto
   }
 
-  .mob-nav-item {
-    position: abolute;
+  
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    border: 1px solid black;
   }
+    
+li {
+  border: 1px solid red;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  position: relative;
+  align-items: stretch;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+      }
   
  }
 
