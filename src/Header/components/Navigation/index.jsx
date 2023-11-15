@@ -1,6 +1,5 @@
 import { NavData } from "../../../data/NavData"
 import NavItem from "./NavItem"
-import NewMobileNav from "../NeueMobileNav"
 // import BurgerMenu from "./BurgerMenu"
 
 
