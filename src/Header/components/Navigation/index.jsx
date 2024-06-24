@@ -1,5 +1,6 @@
 import { NavData } from "../../../data/NavData"
 import NavItem from "./NavItem"
+
 // import BurgerMenu from "./BurgerMenu"
 
 
@@ -10,9 +11,7 @@ const Navigation = () => {
     })
     return (
         <nav>
-            <ul className="nav-list">{MyNavigation}</ul>
-            {/* <BurgerMenu /> */}
-            <NewMobileNav/>
+            <ul >{MyNavigation}</ul>
         </nav>
     )
 }
