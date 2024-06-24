@@ -3,14 +3,15 @@ import Logo from "./components/Logo"
 import Navigation from "./components/Navigation"
 import Title from "./components/Title"
 import styles from "./styling/Header.module.css"
+import NewMobileNav from './components/NewMobileNav'
 
 const Header = () => {
-    console.log("styling", styles)
     return (
        
             <header className={styles.headerWrapper}>
+                <NewMobileNav/>
             <Logo />
-            <Title />
+             <Title />
             <Navigation/>
             </header>
        

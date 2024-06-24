@@ -1,0 +1,31 @@
+/**
+if screen is smaller than 767px*/
+
+.mobileNav{
+    display: block;
+    background-color: white;
+    height: 50vh;
+    position: absolute;
+    width: 100%
+
+}
+
+.mobileNavInner{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    /**if screen is bigger then 768px
+    */
+.mobileNav{
+    display: none
+}
+
+}

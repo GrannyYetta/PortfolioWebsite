@@ -1,9 +1,15 @@
 import { NavLink } from "react-router-dom"
+import styles from '../../styling/Header.module.css'
 
 
 const NavItem = ({link, title}) => {
+  console.log(styles)
     return (
-      <li className="nav-item"><NavLink to={link}>{title}</NavLink></li>  
+      <NavLink to={link}>
+        <li className={styles.navItem}>
+          {title}
+        </li>  
+        </NavLink>
     )
 }
 
